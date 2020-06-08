@@ -1,0 +1,166 @@
+/*font-family: 'Pridi', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@700&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import "vars";
+@import "libs";
+@import "global";
+
+.header {
+	background: url(../img/main-bg.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	text-align: center;
+	font-weight: 700;
+	color: $accent;
+	position: relative;
+	padding: 40px 0;
+
+	&__logo img {
+		position: absolute;
+		width: 40px;
+		height: 33px;
+		top: 7px;
+		left: 14px;
+	}
+
+	&__logo-number,
+	&__logo-btn {
+		display: none;
+	}
+
+	&__title {
+		color: #fff;
+		font-size: 26px;
+		line-height: 28px;
+		margin-bottom: 11px;
+		padding: 0 24px;
+	}
+
+	&__title span {
+		color: $red;
+	}
+
+	&__text {
+		color: #fff;
+		font-size: 10px;
+		line-height: 14px;
+		margin-bottom: 146px;
+		padding: 0 58px;
+	}
+
+	&__img {
+		margin-bottom: 20px;
+		width: 80%;
+		height: 80%;
+		background-size: cover;
+	}
+
+	/*=============  Action  ===============*/
+
+	&__action {
+		padding: 14px 29px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 30px rgba(80, 171, 255, 0.5);
+		border-radius: 15px;
+	}
+
+	&__action-title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 25px
+	}
+
+	&__action-text {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	&__action-text span {
+		color: $red;
+		font-weight: 700;
+	}
+
+	&__action-taimer {
+		font-size: 36px;
+		line-height: 49px;
+		color: $red;
+	}
+
+	/*=========  Price =============*/
+	&__action-price {
+		max-width: 202px;
+		box-shadow: 0px 4px 30px rgba(80, 171, 255, 0.5);
+		border-radius: 15px;
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	&__action-price-right {
+		width: 50%;
+		background: $red;
+		color: #fff;
+		padding: 10px 5px;
+	}
+
+	&__action-price-left {
+		width: 50%;
+		padding: 10px 5px;
+	}
+
+	&__action-price-text {
+		font-weight: normal;
+		font-size: 11px;
+		line-height: 15px;
+	}
+
+	&__action-price-cash {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 33px;
+	}
+
+	/*========== Form ==========*/
+
+	&__action-form {
+		margin-top: 15px;
+	}
+
+	&__action-input {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 19px;
+		color: #696969;
+		border: 2px solid #B9BABB;
+		box-sizing: border-box;
+		border-radius: 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:321px) {
+	.header {
+		background: url(../img/main-big-bg.png);
+		background-size: cover;
+		background-position: top center;
+	}
+}
